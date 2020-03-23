@@ -1,0 +1,7 @@
+mkdir backend
+npm init -y
+npm install express
+cd
+npx create-react-app frontend
+cd frontend
+cd npm start
