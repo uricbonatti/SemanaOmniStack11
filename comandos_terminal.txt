@@ -25,3 +25,9 @@ npx knex migrate:make create_ongs
 npx knex migrate:latest
 npx knex migrate:make create_incidents
 npm install cors
+
+
+
+npm install react-icons
+npm install react-router-dom
+npm install axios
