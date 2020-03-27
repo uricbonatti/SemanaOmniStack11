@@ -1,7 +1,7 @@
 mkdir backend
 npm init -y
 npm install express
-cd
+cd ..
 npx create-react-app frontend
 cd frontend
 cd npm start
@@ -31,3 +31,39 @@ npm install cors
 npm install react-icons
 npm install react-router-dom
 npm install axios
+
+#
+npm install -g expo-cli@3.5 //Para instalar o Expo de forma global na maquina
+
+//Devido a problemas com o npm pra instalar o expo-cli precisei usar o yarn
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
+
+echo $PATH
+nano  ~/.bash_profile
+paste -> export PATH=$PATH:~/.npm-global/bin
+source ~/.bash_profile
+echo $PATH
+expo -V
+
+npm -g update expo-cli
+
+expo init mobile
+cd mobile
+expo install --yarn
+expo install --npm
+
+yarn start
+
+npm install axios
+npm install intl
+npm install @react-navigation/native
+npm install @react-navigation/stack
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+expo install expo-constants
+expo install expo-mail-composer
+expo doctor
+
+ 
