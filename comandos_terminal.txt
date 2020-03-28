@@ -66,4 +66,12 @@ expo install expo-constants
 expo install expo-mail-composer
 expo doctor
 
- 
+cd ..
+cd backend
+npm install celebrate
+npm install jest //para testes
+npx jest --init
+
+npm test
+
+npm install cross-env
